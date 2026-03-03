@@ -1,0 +1,19 @@
+# HR-UPDATER: v1.0
+# lackierer-stellenangebote.de - Lackierer Stellenangebote
+
+> lackierer-stellenangebote.de ist ein spezialisiertes Jobportal fuer Lackierer-Stellenangebote in Deutschland, Oesterreich und der Schweiz.
+
+## Ueber uns
+- Spezialisiertes Jobportal fuer Lackierer
+- Kostenlose Stellensuche fuer Bewerber
+- Gezielte Reichweite fuer Arbeitgeber
+
+## Kontakt
+- Website: https://lackierer-stellenangebote.de
+- Arbeitgeber-Kontakt: https://lackierer-stellenangebote.de/kontakt-arbeitgeber
+- Bewerber-Kontakt: https://lackierer-stellenangebote.de/kontakt-bewerber
+
+## Inhalte
+- Aktuelle Lackierer-Stellenangebote
+- Karriere-Ratgeber fuer Lackierer
+- Gehaltsvergleiche und Brancheninformationen

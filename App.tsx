@@ -1,3 +1,4 @@
+// HR-UPDATER: v1.0
 ﻿import React, { useEffect, useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
@@ -6,6 +7,11 @@ import { JobSeeker } from './pages/JobSeeker';
 import { Employer } from './pages/Employer';
 import { Lackierstellenangebote } from './pages/Lackierstellenangebote';
 import { UserType } from './types';
+import { HashRouter, Routes, Route, Link } from 'react-router-dom';
+import AutorSeite from './pages/AutorSeite';
+import Datenschutz from './pages/Datenschutz';
+import Impressum from './pages/Impressum';
+import Contact from './pages/Contact';
 
 const pathForPage: Record<UserType, string> = {
   [UserType.HOME]: '/',
