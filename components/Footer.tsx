@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { SprayCan } from 'lucide-react';
 
 export const Footer = () => {
@@ -45,10 +44,10 @@ export const Footer = () => {
           <div>
             <h4 className="text-white font-display font-bold uppercase tracking-widest mb-6 text-sm">Rechtliches</h4>
             <ul className="space-y-3 text-sm text-gray-400">
-              <li><Link to="/impressum" className="hover:text-white transition-colors">Impressum</Link></li>
-              <li><Link to="/datenschutz" className="hover:text-white transition-colors">Datenschutz</Link>
-            <Link to="/kontakt" className="hover:text-blue-400 transition-colors">Kontakt</Link>
-            <Link to="/autor/thomas-sander" className="hover:text-blue-400 transition-colors">Autor</Link></li>
+              <li><a href="#/impressum" className="hover:text-white transition-colors">Impressum</a></li>
+              <li><a href="#/datenschutz" className="hover:text-white transition-colors">Datenschutz</a></li>
+              <li><a href="#/kontakt" className="hover:text-white transition-colors">Kontakt</a></li>
+              <li><a href="#/autor/thomas-sander" className="hover:text-white transition-colors">Autor</a></li>
               <li><a href="#" className="hover:text-white transition-colors">AGB</a></li>
             </ul>
           </div>

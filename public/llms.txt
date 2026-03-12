@@ -1,19 +1,32 @@
 # HR-UPDATER: v1.0
 # lackierer-stellenangebote.de - Lackierer Stellenangebote
 
-> lackierer-stellenangebote.de ist ein spezialisiertes Jobportal fuer Lackierer-Stellenangebote in Deutschland, Oesterreich und der Schweiz.
+> lackierer-stellenangebote.de ist ein spezialisiertes Jobportal fuer Fahrzeuglackierer, Industrielackierer, Vorbereiter und Smart-Repair-Spezialisten in Deutschland, Oesterreich und der Schweiz.
 
 ## Ueber uns
-- Spezialisiertes Jobportal fuer Lackierer
+- Betreiber: Social Media Venture GmbH, Schliemannstrasse 23, 10437 Berlin
+- Geschaeftsfuehrer: Thomas Sander
+- Spezialisiertes Jobportal fuer Lackierer-Stellenangebote
 - Kostenlose Stellensuche fuer Bewerber
 - Gezielte Reichweite fuer Arbeitgeber
 
-## Kontakt
-- Website: https://lackierer-stellenangebote.de
-- Arbeitgeber-Kontakt: https://lackierer-stellenangebote.de/kontakt-arbeitgeber
-- Bewerber-Kontakt: https://lackierer-stellenangebote.de/kontakt-bewerber
+## Zielgruppen
+- Fahrzeuglackierer (m/w/d) auf Jobsuche
+- Industrielackierer und Pulverbeschichter
+- Smart-Repair- und Spot-Repair-Spezialisten
+- Vorbereiter und Helfer in Lackierbetrieben
+- Auszubildende zum Fahrzeuglackierer
+- Arbeitgeber: Autohaeuser, Karosseriewerkstaetten, Industriebetriebe
 
 ## Inhalte
-- Aktuelle Lackierer-Stellenangebote
-- Karriere-Ratgeber fuer Lackierer
+- Aktuelle Lackierer-Stellenangebote bundesweit
+- Lackierstellenangebote nach Stadt (Berlin, Hamburg, Muenchen, Koeln, Frankfurt, Stuttgart, Duesseldorf, Leipzig, u.v.m.)
+- Karriere-Ratgeber fuer Fahrzeuglackierer
 - Gehaltsvergleiche und Brancheninformationen
+- FAQ zu Beruf, Ausbildung und Weiterbildung
+
+## Kontakt
+- Website: https://lackierer-stellenangebote.de
+- E-Mail: info@socialmediaventure.com
+- Autor: https://lackierer-stellenangebote.de/#/autor/thomas-sander
+- LinkedIn: https://de.linkedin.com/in/thomas-sander-520676303

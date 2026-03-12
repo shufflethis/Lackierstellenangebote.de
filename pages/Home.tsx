@@ -1,6 +1,6 @@
 import React from 'react';
 import { UserType } from '../types';
-import { ArrowRight, Wrench, Layers, Star, PenTool, ShieldCheck, Sparkles } from 'lucide-react';
+import { ArrowRight, Wrench, Layers, Star, PenTool, ShieldCheck, Sparkles, MapPin, TrendingUp, GraduationCap, ChevronDown, ChevronUp } from 'lucide-react';
 
 interface HomeProps {
   onNavigate: (page: UserType) => void;
@@ -11,8 +11,8 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
     <div className="bg-white text-gray-900 font-sans w-full">
       <section className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-gray-950 to-black text-white">
         <div className="absolute inset-0 opacity-50 bg-[radial-gradient(circle_at_10%_20%,rgba(249,115,22,0.18),transparent_25%),radial-gradient(circle_at_80%_10%,rgba(255,255,255,0.08),transparent_30%)]" />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 grid lg:grid-cols-12 gap-10 relative z-10">
-          <div className="lg:col-span-7 space-y-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20 lg:py-28 grid lg:grid-cols-12 gap-8 lg:gap-10 relative z-10">
+          <div className="lg:col-span-7 space-y-6 sm:space-y-8">
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-white/10 border border-white/20 rounded-full text-xs font-bold uppercase tracking-[0.2em]">
               <span className="w-2 h-2 rounded-full bg-accent-primary animate-pulse"></span>
               Nr. 1 für Fahrzeuglackierer
@@ -38,7 +38,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
                 Stelle schalten
               </button>
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4 text-sm text-gray-300">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 pt-4 text-sm text-gray-300">
               <div className="bg-white/5 border border-white/10 rounded-lg p-4">
                 <p className="text-2xl font-display font-black text-white">500+</p>
                 <p className="uppercase tracking-widest text-xs">Offene Stellen</p>
@@ -58,8 +58,8 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
             </div>
           </div>
 
-          <div className="lg:col-span-5">
-            <div className="relative h-[420px] rounded-3xl overflow-hidden shadow-2xl border border-white/10 bg-white/5 backdrop-blur">
+          <div className="lg:col-span-5 hidden sm:block">
+            <div className="relative h-[280px] sm:h-[360px] lg:h-[420px] rounded-3xl overflow-hidden shadow-2xl border border-white/10 bg-white/5 backdrop-blur">
               <img
                 src="https://images.pexels.com/photos/4489732/pexels-photo-4489732.jpeg?auto=compress&cs=tinysrgb&w=2000&h=1400&dpr=1"
                 alt="Fahrzeug wird in der Kabine lackiert"
@@ -211,7 +211,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
           <span className="text-accent-primary font-bold uppercase tracking-[0.2em] mb-2 block">Impressionen</span>
           <h3 className="text-3xl md:text-4xl font-display font-black text-gray-900">Lackierkabine, Mischraum & Smart-Repair</h3>
         </div>
-        <div className="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
             {[
               { src: 'https://images.pexels.com/photos/4489732/pexels-photo-4489732.jpeg?auto=compress&cs=tinysrgb&w=1200&h=900&dpr=1', alt: 'Spritzpistole im Einsatz an einem Fahrzeug' },
               { src: 'https://images.pexels.com/photos/4021775/pexels-photo-4021775.jpeg?auto=compress&cs=tinysrgb&w=1200&h=900&dpr=1', alt: 'Vorbereitung eines Stoßfängers' },
@@ -282,6 +282,125 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
               <p className="text-gray-700 leading-relaxed">
                 Ja. Neben Fachkräften listen wir auch Stellen für Vorbereiter und Helfer, weil sie für den sauberen Workflow in der Lackierung unverzichtbar sind.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Geo SEO Section - Lackierer Jobs in deutschen Staedten */}
+      <section className="bg-gray-50 py-16 sm:py-20 border-t border-gray-200">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-10 sm:mb-12">
+            <span className="text-accent-primary font-bold uppercase tracking-[0.2em] text-sm">Standorte</span>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-black text-gray-900 mt-2">Lackierer-Jobs in deiner Stadt</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto mt-3">Wir listen Lackierer-Stellenangebote in allen grossen deutschen Staedten. Finde Werkstaetten und Betriebe mit modernen Kabinen direkt in deiner Region.</p>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4">
+            {[
+              { city: 'Berlin', region: 'Berlin' },
+              { city: 'Hamburg', region: 'Hamburg' },
+              { city: 'Muenchen', region: 'Bayern' },
+              { city: 'Koeln', region: 'NRW' },
+              { city: 'Frankfurt', region: 'Hessen' },
+              { city: 'Stuttgart', region: 'Baden-Wuerttemberg' },
+              { city: 'Duesseldorf', region: 'NRW' },
+              { city: 'Leipzig', region: 'Sachsen' },
+              { city: 'Dortmund', region: 'NRW' },
+              { city: 'Essen', region: 'NRW' },
+              { city: 'Bremen', region: 'Bremen' },
+              { city: 'Dresden', region: 'Sachsen' },
+              { city: 'Hannover', region: 'Niedersachsen' },
+              { city: 'Nuernberg', region: 'Bayern' },
+              { city: 'Duisburg', region: 'NRW' },
+              { city: 'Bochum', region: 'NRW' },
+              { city: 'Wuppertal', region: 'NRW' },
+              { city: 'Bielefeld', region: 'NRW' },
+              { city: 'Mannheim', region: 'Baden-Wuerttemberg' },
+              { city: 'Augsburg', region: 'Bayern' },
+              { city: 'Karlsruhe', region: 'Baden-Wuerttemberg' },
+              { city: 'Wiesbaden', region: 'Hessen' },
+              { city: 'Muenster', region: 'NRW' },
+              { city: 'Braunschweig', region: 'Niedersachsen' },
+              { city: 'Kiel', region: 'Schleswig-Holstein' },
+            ].map((item) => (
+              <button
+                key={item.city}
+                onClick={() => onNavigate(UserType.SEEKER)}
+                className="flex items-center gap-2 bg-white border border-gray-200 rounded-xl p-3 sm:p-4 hover:border-accent-primary/40 hover:shadow-md transition-all duration-300 group text-left"
+              >
+                <MapPin size={16} className="text-accent-primary flex-shrink-0" />
+                <div className="min-w-0">
+                  <p className="font-bold text-gray-900 text-sm group-hover:text-accent-primary transition-colors truncate">Lackierer Jobs {item.city}</p>
+                  <p className="text-xs text-gray-500 truncate">{item.region}</p>
+                </div>
+              </button>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Karriere-Info Section */}
+      <section className="bg-white py-16 sm:py-20 border-t border-gray-200">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="text-center mb-10 sm:mb-12">
+            <span className="text-accent-primary font-bold uppercase tracking-[0.2em] text-sm">Karriere-Ratgeber</span>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-black text-gray-900 mt-2">Karriere als Fahrzeuglackierer</h2>
+            <p className="text-gray-600 max-w-3xl mx-auto mt-3">Alles, was du ueber den Beruf, Ausbildung, Weiterbildung und Gehaltsaussichten als Lackierer wissen musst.</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6 sm:gap-8 mb-12">
+            <div className="bg-gray-50 rounded-2xl p-6 border border-gray-200">
+              <div className="w-12 h-12 bg-accent-primary/10 rounded-xl flex items-center justify-center mb-4">
+                <GraduationCap className="text-accent-primary" size={24} />
+              </div>
+              <h3 className="text-xl font-display font-black text-gray-900 mb-3">Ausbildung</h3>
+              <p className="text-gray-600 leading-relaxed text-sm">
+                Die Ausbildung zum Fahrzeuglackierer dauert 3 Jahre und ist dual organisiert. Du lernst Untergrundbehandlung, Farbmischung, Spritzlackierung und moderne Reparaturtechniken. Voraussetzung ist mindestens ein Hauptschulabschluss, Farbgefuehl und handwerkliches Geschick.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-2xl p-6 border border-gray-200">
+              <div className="w-12 h-12 bg-accent-primary/10 rounded-xl flex items-center justify-center mb-4">
+                <TrendingUp className="text-accent-primary" size={24} />
+              </div>
+              <h3 className="text-xl font-display font-black text-gray-900 mb-3">Weiterbildung & Aufstieg</h3>
+              <p className="text-gray-600 leading-relaxed text-sm">
+                Als Lackierermeister leitest du Teams und uebernimmst Verantwortung. Techniker-Weiterbildungen, Spezialisierung auf Oldtimer-Restauration, Industrielackierung oder Farbtonmessung eroeffnen weitere Karrierewege. Teamleiter und Werkstattleiter verdienen deutlich ueber dem Durchschnitt.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-2xl p-6 border border-gray-200">
+              <div className="w-12 h-12 bg-accent-primary/10 rounded-xl flex items-center justify-center mb-4">
+                <Wrench className="text-accent-primary" size={24} />
+              </div>
+              <h3 className="text-xl font-display font-black text-gray-900 mb-3">Arbeitsalltag</h3>
+              <p className="text-gray-600 leading-relaxed text-sm">
+                Lackierer arbeiten in klimatisierten Lackierkabinen, tragen professionelle PSA und nutzen moderne Farbmischsysteme. Der Beruf erfordert Praezision, Sauberkeit und ein gutes Auge fuer Farbtoene. Smart-Repair und Spot-Repair sind wachsende Spezialisierungen.
+              </p>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-br from-gray-900 to-gray-950 rounded-2xl p-6 sm:p-8 text-white">
+            <h3 className="text-xl sm:text-2xl font-display font-black mb-4">Gehalt als Fahrzeuglackierer in Deutschland</h3>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div className="bg-white/10 border border-white/10 rounded-xl p-4">
+                <p className="text-accent-primary font-bold text-sm uppercase tracking-wider mb-1">Einstieg</p>
+                <p className="text-2xl font-display font-black">2.400 - 2.800 EUR</p>
+                <p className="text-gray-300 text-xs mt-1">Brutto / Monat</p>
+              </div>
+              <div className="bg-white/10 border border-white/10 rounded-xl p-4">
+                <p className="text-accent-primary font-bold text-sm uppercase tracking-wider mb-1">Mit Erfahrung</p>
+                <p className="text-2xl font-display font-black">3.000 - 3.800 EUR</p>
+                <p className="text-gray-300 text-xs mt-1">Brutto / Monat</p>
+              </div>
+              <div className="bg-white/10 border border-white/10 rounded-xl p-4">
+                <p className="text-accent-primary font-bold text-sm uppercase tracking-wider mb-1">Spezialist</p>
+                <p className="text-2xl font-display font-black">3.500 - 4.500 EUR</p>
+                <p className="text-gray-300 text-xs mt-1">Brutto / Monat</p>
+              </div>
+              <div className="bg-white/10 border border-white/10 rounded-xl p-4">
+                <p className="text-accent-primary font-bold text-sm uppercase tracking-wider mb-1">Meister / Teamleiter</p>
+                <p className="text-2xl font-display font-black">4.000 - 5.500 EUR</p>
+                <p className="text-gray-300 text-xs mt-1">Brutto / Monat</p>
+              </div>
             </div>
           </div>
         </div>

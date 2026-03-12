@@ -15,10 +15,17 @@ const AutorSeite: React.FC = () => {
           '@type': 'Organization',
           name: 'Social Media Venture GmbH',
           url: 'https://lackierer-stellenangebote.de',
+          address: {
+            '@type': 'PostalAddress',
+            streetAddress: 'Schliemannstrasse 23',
+            addressLocality: 'Berlin',
+            postalCode: '10437',
+            addressCountry: 'DE',
+          },
         },
         description: 'HR-Tech-Experte und Gründer spezialisierter Jobportale für Fachkräfte in Deutschland.',
         knowsAbout: ['HR-Tech', 'Recruiting', 'Jobportale', 'Lackierer', 'Personalwesen'],
-        sameAs: ['https://www.linkedin.com/in/thomas-sander-smv/'],
+        sameAs: ['https://de.linkedin.com/in/thomas-sander-520676303'],
       }) }} />
 
       <div className="bg-slate-50 py-16 md:py-24">
@@ -77,6 +84,17 @@ const AutorSeite: React.FC = () => {
                 </div>
               </section>
 
+              {/* Company Info Section */}
+              <section className="bg-slate-50 rounded-xl p-6 border border-slate-100">
+                <h2 className="text-xl font-bold text-slate-900 mb-4">Unternehmen</h2>
+                <div className="text-slate-600 leading-relaxed space-y-2 text-sm">
+                  <p className="font-semibold text-slate-900">Social Media Venture GmbH</p>
+                  <p>Schliemannstrasse 23</p>
+                  <p>10437 Berlin</p>
+                  <p className="pt-2">Geschaeftsfuehrer: Thomas Sander</p>
+                </div>
+              </section>
+
               {/* Contact Section */}
               <section className="bg-slate-50 rounded-xl p-6 border border-slate-100">
                 <h2 className="text-xl font-bold text-slate-900 mb-4">Kontakt</h2>
@@ -100,7 +118,7 @@ const AutorSeite: React.FC = () => {
                     </div>
                     <div>
                       <p className="text-xs text-slate-500 font-medium">LinkedIn</p>
-                      <a href="https://www.linkedin.com/in/thomas-sander-smv/" target="_blank" rel="noopener noreferrer" className="text-sky-600 hover:text-sky-700 font-medium text-sm">LinkedIn-Profil</a>
+                      <a href="https://de.linkedin.com/in/thomas-sander-520676303" target="_blank" rel="noopener noreferrer" className="text-sky-600 hover:text-sky-700 font-medium text-sm">LinkedIn-Profil</a>
                     </div>
                   </div>
                 </div>
